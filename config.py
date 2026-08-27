@@ -10,7 +10,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 # --- Qdrant ---
 QDRANT_HOST = "localhost"
-QDRANT_PORT = 6333
+QDRANT_PORT = 6335
 COLLECTION_NAME = "lab18_production"
 NAIVE_COLLECTION = "lab18_naive"
 
@@ -27,7 +27,7 @@ SEMANTIC_THRESHOLD = 0.85
 BM25_TOP_K = 20
 DENSE_TOP_K = 20
 HYBRID_TOP_K = 20
-RERANK_TOP_K = 3
+RERANK_TOP_K = 5
 
 # --- Paths ---
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
